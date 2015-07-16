@@ -15,7 +15,9 @@ crossPaths := false
 
 resolvers ++= Seq(
   "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "Spring Repo" at "https://repo.spring.io/libs-release"
+  "Maven" at "http://oss.jfrog.org/artifactory/oss-snapshot-local/",
+  "Spring Repo" at "https://repo.spring.io/libs-release",
+  "JCenter" at "https://jcenter.bintray.com"
 )
 
 libraryDependencies ++= Seq(
@@ -26,7 +28,12 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-autoconfigure" % "1.2.5.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-web" % "1.2.5.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-parent" % "1.2.5.RELEASE",
-  "org.springframework" % "spring-test" % "4.1.6.RELEASE"
+  "org.springframework" % "spring-test" % "4.1.6.RELEASE",
+  "io.springfox" % "springfox-core" % "2.0.4-SNAPSHOT",
+  "io.springfox" % "springfox-spi" % "2.0.4-SNAPSHOT",
+  "io.springfox" % "springfox-spring-web" % "2.0.4-SNAPSHOT",
+  "io.springfox" % "springfox-swagger2" % "2.0.4-SNAPSHOT",
+  "io.springfox" % "springfox-swagger-ui" % "2.0.4-SNAPSHOT"
 )
 
 // Test settings
