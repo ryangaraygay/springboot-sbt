@@ -28,6 +28,7 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-autoconfigure" % "1.2.5.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-web" % "1.2.5.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-parent" % "1.2.5.RELEASE",
+  "org.springframework.boot" % "spring-boot-starter-thymeleaf" % "1.2.5.RELEASE",
   "org.springframework" % "spring-test" % "4.1.6.RELEASE",
   "io.springfox" % "springfox-core" % "2.0.4-SNAPSHOT",
   "io.springfox" % "springfox-spi" % "2.0.4-SNAPSHOT",
