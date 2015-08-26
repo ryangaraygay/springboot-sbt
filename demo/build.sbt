@@ -33,7 +33,11 @@ libraryDependencies ++= Seq(
   "io.springfox" % "springfox-spi" % "2.0.4-SNAPSHOT",
   "io.springfox" % "springfox-spring-web" % "2.0.4-SNAPSHOT",
   "io.springfox" % "springfox-swagger2" % "2.0.4-SNAPSHOT",
-  "io.springfox" % "springfox-swagger-ui" % "2.0.4-SNAPSHOT"
+  "io.springfox" % "springfox-swagger-ui" % "2.0.4-SNAPSHOT",
+  "org.hibernate" % "hibernate-core" % "4.3.8.Final",
+  "org.hibernate.javax.persistence" 	% "hibernate-jpa-2.0-api" 		% "1.0.1.Final",
+  "org.hibernate" % "hibernate-c3p0" % "4.3.8.Final",
+  "mysql" % "mysql-connector-java" % "5.1.6"
 )
 
 // Test settings

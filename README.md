@@ -23,6 +23,11 @@ http://localhost:8080/swagger-resources
 or use the UI to explore the APIs
 http://localhost:8080/swagger-ui.html
 
+branch (hibernate) notes:
+* requires a local MySQL database with a database called test
+use docker-machine if you don't want MySQL in your host machine
+modify resources/hibernate.cfg.xml with the connection information
+
 Encountered Issues
 * had issues with resolvers earlier - when I was using old versions of springfox - (cannot find symbols etc..) - release versions are in Maven repos otherwise you might need the resolvers mentioned in build.sbt
 * initially when I accessed /v2/api-docs it was empty. It was because in SwaggerConfig.customImplementation a groupname was introduced (.groupName("greeting-api-group")), if there are groups then you need to access the api-docs with group querystring v2/api-docs?group=greeting-api-group
